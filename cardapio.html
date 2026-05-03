@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cardápio | Caseirinhas da Cris</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Great+Vibes&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- OVERLAY DE CARREGAMENTO (COZINHA) -->
+<div id="loading-overlay" class="loading-overlay">
+    <div class="loading-content">
+        <!-- Certifique-se de que o caminho da logo está correto -->
+        <img src="Imagens Logo/Logo PNG.png" alt="Logo" class="loading-logo">
+        <p>Enviando para a cozinha...</p>
+        <div class="loader"></div>
+    </div>
+</div>
+
+    <header>
+        <nav class="container">
+            <a href="index.html"><img src="Imagens Logo/Logo.png" alt="Logo" class="logo"></a>
+            <ul class="nav-list">
+                <li><a href="index.html">Home</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="section-padding container">
+        <h1 class="title-font" style="text-align: center; margin-bottom: 40px;">Nosso Cardápio</h1>
+        
+<!-- MECANISMO DE PESQUISA -->
+<div class="search-container">
+    <i class="fas fa-search"></i>
+    <input type="text" id="search-input" placeholder="Procure seu prato favorito...">
+</div>
+
+        <div class="menu-grid">
+            <!-- PRATOS 1 A 6 -->
+            <div class="item-card">
+                <img src="Imagens Cardápio/Prato1.jpeg" alt="Frango com Legumes">
+                <div class="info">
+                    <h3>Carne Desfiada 500G</h3>
+                    <p class="desc">Carne desfiada com couve flor gratinada</p>
+                    <span class="preco">R$ 23,00</span>
+                    <div class="obs-container">
+                        <i class="fas fa-pencil-alt"></i>
+                        <input type="text" class="obs-input" placeholder="Alguma observação?">
+                    </div>
+                    <button class="btn-add">Adicionar ao Pedido</button>
+                </div>
+            </div>
+
+            <div class="item-card">
+                <img src="Imagens Cardápio/Prato2.jpeg" alt="Escondidinho">
+                <div class="info">
+                    <h3>Frango com mix de Legumes 500G</h3>
+                    <p class="desc">Frango grelhado com abobrinha, cenoura e brócolis</p>
+                    <span class="preco">R$ 21,00</span>
+                    <div class="obs-container">
+                        <i class="fas fa-pencil-alt"></i>
+                        <input type="text" class="obs-input" placeholder="Alguma observação?">
+                    </div>
+                    <button class="btn-add">Adicionar ao Pedido</button>
+                </div>
+            </div>
+
+            <div class="item-card">
+                <img src="Imagens Cardápio/Prato3.jpeg" alt="Bowl Vegano">
+                <div class="info">
+                    <h3>Carne moida com purê 500G</h3>
+                    <p class="desc">Carne moida magra, purê de batata doce e arroz com abóbora assada</p>
+                    <span class="preco">R$ 28,00</span>
+                    <div class="obs-container">
+                        <i class="fas fa-pencil-alt"></i>
+                        <input type="text" class="obs-input" placeholder="Alguma observação?">
+                    </div>
+                    <button class="btn-add">Adicionar ao Pedido</button>
+                </div>
+            </div>
+
+            <div class="item-card">
+                <img src="Imagens Cardápio/Prato4.jpeg" alt="Espaguete">
+                <div class="info">
+                    <h3>Almôndegas assadas 500G</h3>
+                    <p class="desc">Almôndegas caserias, arroz, feijão e purê</p>
+                    <span class="preco">R$ 23,00</span>
+                    <div class="obs-container">
+                        <i class="fas fa-pencil-alt"></i>
+                        <input type="text" class="obs-input" placeholder="Alguma observação?">
+                    </div>
+                    <button class="btn-add">Adicionar ao Pedido</button>
+                </div>
+            </div>
+
+            <div class="item-card">
+                <img src="Imagens Cardápio/Prato5.jpeg" alt="Tilápia">
+                <div class="info">
+                    <h3>Strogonoff Fit de Frango 500G</h3>
+                    <p class="desc">Frango ao molho leve, arroz integral e batata souté</p>
+                    <span class="preco">R$ 23,00</span>
+                    <div class="obs-container">
+                        <i class="fas fa-pencil-alt"></i>
+                        <input type="text" class="obs-input" placeholder="Alguma observação?">
+                    </div>
+                    <button class="btn-add">Adicionar ao Pedido</button>
+                </div>
+            </div>
+
+            <div class="item-card">
+                <img src="Imagens Cardápio/Prato6.jpeg" alt="Feijoada">
+                <div class="info">
+                    <h3>Filé de frango com batata doce 500G</h3>
+                    <p class="desc">Frango grelhado, batata doce cozida e brócolis</p>
+                    <span class="preco">R$ 20,00</span>
+                    <div class="obs-container">
+                        <i class="fas fa-pencil-alt"></i>
+                        <input type="text" class="obs-input" placeholder="Alguma observação?">
+                    </div>
+                    <button class="btn-add">Adicionar ao Pedido</button>
+                </div>
+            </div>
+
+            <!-- NOVOS PRATOS: 7 AO 21 -->
+            <div class="item-card">
+                <img src="Imagens Cardápio/Prato7.jpeg" alt="Strogonoff">
+                <div class="info">
+                    <h3>Frango grelhado com arroz integral 500G</h3>
+                    <p class="desc">Frango grelhado, arroz integral e legumes salteados</p>
+                    <span class="preco">R$ 20,00</span>
+                    <div class="obs-container"><i class="fas fa-pencil-alt"></i><input type="text" class="obs-input" placeholder="Alguma observação?"></div>
+                    <button class="btn-add">Adicionar ao Pedido</button>
+                </div>
+            </div>
+
+            <div class="item-card">
+                <img src="Imagens Cardápio/Prato8.jpeg" alt="Lasanha">
+                <div class="info">
+                    <h3>Feijoada 500G</h3>
+                    <p class="desc">Feijão preto (costelinha, lombo, paio, linguiça e carne seca), arroz branco, couve manteiga refogada e farofa</p>
+                    <span class="preco">R$ 22,00</span>
+                    <div class="obs-container"><i class="fas fa-pencil-alt"></i><input type="text" class="obs-input" placeholder="Alguma observação?"></div>
+                    <button class="btn-add">Adicionar ao Pedido</button>
+                </div>
+            </div>
+
+            <div class="item-card">
+                <img src="Imagens Cardápio/Prato8.jpeg" alt="Lasanha">
+                <div class="info">
+                    <h3>Feijoada 1KG</h3>
+                    <p class="desc">Feijão preto (costelinha, lombo, paio, linguiça e carne seca), arroz branco, couve manteiga refogada e farofa</p>
+                    <span class="preco">R$ 30,00</span>
+                    <div class="obs-container"><i class="fas fa-pencil-alt"></i><input type="text" class="obs-input" placeholder="Alguma observação?"></div>
+                    <button class="btn-add">Adicionar ao Pedido</button>
+                </div>
+            </div>
+
+            <div class="item-card">
+                <img src="Imagens Cardápio/Prato9.jpeg" alt="Carne de Panela">
+                <div class="info">
+                    <h3>Macarrão penne com filé de coxa 500G</h3>
+                    <p class="desc">Macarrão penne com molho de tomate caseiro e filé de coxa de frango assado</p>
+                    <span class="preco">R$ 22,00</span>
+                    <div class="obs-container"><i class="fas fa-pencil-alt"></i><input type="text" class="obs-input" placeholder="Alguma observação?"></div>
+                    <button class="btn-add">Adicionar ao Pedido</button>
+                </div>
+            </div>
+
+            <div class="item-card">
+                <img src="Imagens Cardápio/Prato10.jpeg" alt="Salmão">
+                <div class="info">
+                    <h3>Panqueca de carne 500G</h3>
+                    <p class="desc">Panqueca de carne com molho caseiro de mussarela / 3 Un.</p>
+                    <span class="preco">R$ 22,00</span>
+                    <div class="obs-container"><i class="fas fa-pencil-alt"></i><input type="text" class="obs-input" placeholder="Alguma observação?"></div>
+                    <button class="btn-add">Adicionar ao Pedido</button>
+                </div>
+            </div>
+
+            <div class="item-card">
+                <img src="Imagens Cardápio/Prato11.jpeg" alt="Kibe">
+                <div class="info">
+                    <h3>Nhoque de mandioquinha rústico 500G</h3>
+                    <p class="desc">Nhoque de mandioquinha com molho de tomate e isca de frango.</p>
+                    <span class="preco">R$ 34,00</span>
+                    <div class="obs-container"><i class="fas fa-pencil-alt"></i><input type="text" class="obs-input" placeholder="Alguma observação?"></div>
+                    <button class="btn-add">Adicionar ao Pedido</button>
+                </div>
+            </div>
+
+            <div class="item-card">
+                <img src="Imagens Cardápio/Prato12.jpeg" alt="Almôndegas">
+                <div class="info">
+                    <h3>Nhoque de batata 500G</h3>
+                    <p class="desc">Nhoque de batata com molho caseiro e almôndegas</p>
+                    <span class="preco">R$ 28,00</span>
+                    <div class="obs-container"><i class="fas fa-pencil-alt"></i><input type="text" class="obs-input" placeholder="Alguma observação?"></div>
+                    <button class="btn-add">Adicionar ao Pedido</button>
+                </div>
+            </div>
+
+            <div class="item-card">
+                <img src="Imagens Cardápio/Prato13.jpeg" alt="Risoto">
+                <div class="info">
+                    <h3>Frango assado com batatas 500G</h3>
+                    <p class="desc">Frango assado com batata, arroz e feijão.</p>
+                    <span class="preco">R$ 19,00</span>
+                    <div class="obs-container"><i class="fas fa-pencil-alt"></i><input type="text" class="obs-input" placeholder="Alguma observação?"></div>
+                    <button class="btn-add">Adicionar ao Pedido</button>
+                </div>
+            </div>
+
+            <div class="item-card">
+                <img src="Imagens Cardápio/Prato14.jpeg" alt="Iscas">
+                <div class="info">
+                    <h3>Carne de panela 500G</h3>
+                    <p class="desc">Carne de panela, arroz, feijão e farofa.</p>
+                    <span class="preco">R$ 28,00</span>
+                    <div class="obs-container"><i class="fas fa-pencil-alt"></i><input type="text" class="obs-input" placeholder="Alguma observação?"></div>
+                    <button class="btn-add">Adicionar ao Pedido</button>
+                </div>
+            </div>
+
+            <div class="item-card">
+                <img src="Imagens Cardápio/Prato15.jpeg" alt="Omelete">
+                <div class="info">
+                    <h3>Calabresa acebolada 500G</h3>
+                    <p class="desc">Calabresa acebolada, arroz, feijão e couve manteiga refogada.</p>
+                    <span class="preco">R$ 24,00</span>
+                    <div class="obs-container"><i class="fas fa-pencil-alt"></i><input type="text" class="obs-input" placeholder="Alguma observação?"></div>
+                    <button class="btn-add">Adicionar ao Pedido</button>
+                </div>
+            </div>
+
+            <div class="item-card">
+                <img src="Imagens Cardápio/Prato16.jpeg" alt="Frango Xadrez">
+                <div class="info">
+                    <h3>Carne em cubos ao molho madeira 500G</h3>
+                    <p class="desc">Carne bovina ao molho madeira com batata souté e arroz.</p>
+                    <span class="preco">R$ 32,00</span>
+                    <div class="obs-container"><i class="fas fa-pencil-alt"></i><input type="text" class="obs-input" placeholder="Alguma observação?"></div>
+                    <button class="btn-add">Adicionar ao Pedido</button>
+                </div>
+            </div>
+
+            <div class="item-card">
+                <img src="Imagens Cardápio/Prato17.jpeg" alt="Nhoque">
+                <div class="info">
+                    <h3>Frango ao molho mostarda 500G</h3>
+                    <p class="desc">Frango grelhado com molho de mostarda e arroz com brócolis.</p>
+                    <span class="preco">R$ 28,00</span>
+                    <div class="obs-container"><i class="fas fa-pencil-alt"></i><input type="text" class="obs-input" placeholder="Alguma observação?"></div>
+                    <button class="btn-add">Adicionar ao Pedido</button>
+                </div>
+            </div>
+
+            <div class="item-card">
+                <img src="Imagens Cardápio/Prato18.jpeg" alt="Panqueca">
+                <div class="info">
+                    <h3>Salmão assado com purê de mandioquinha 500G</h3>
+                    <p class="desc">Salmão assado, purê de mandioquinha e arroz com legumes.</p>
+                    <span class="preco">R$ 34,00</span>
+                    <div class="obs-container"><i class="fas fa-pencil-alt"></i><input type="text" class="obs-input" placeholder="Alguma observação?"></div>
+                    <button class="btn-add">Adicionar ao Pedido</button>
+                </div>
+            </div>
+
+            <div class="item-card">
+                <img src="Imagens Cardápio/Prato19.jpeg" alt="Moqueca">
+                <div class="info">
+                    <h3>Tilápia grelhada com legumes 500G</h3>
+                    <p class="desc">Tilápia grelhada, arroz integral e legumes.</p>
+                    <span class="preco">R$ 27,00</span>
+                    <div class="obs-container"><i class="fas fa-pencil-alt"></i><input type="text" class="obs-input" placeholder="Alguma observação?"></div>
+                    <button class="btn-add">Adicionar ao Pedido</button>
+                </div>
+            </div>
+
+            <div class="item-card">
+                <img src="Imagens Cardápio/Prato20.jpeg" alt="Arroz de Carreteiro">
+                <div class="info">
+                    <h3>Tilápia grelhada com legumes 500G</h3>
+                    <p class="desc">Tilápia grelhada com legumes salteados (vagem, cenoura e quiabo).</p>
+                    <span class="preco">R$ 26,00</span>
+                    <div class="obs-container"><i class="fas fa-pencil-alt"></i><input type="text" class="obs-input" placeholder="Alguma observação?"></div>
+                    <button class="btn-add">Adicionar ao Pedido</button>
+                </div>
+            </div>
+
+            <div class="item-card">
+                <img src="Imagens Cardápio/Prato21.jpeg" alt="Cuscuz">
+                <div class="info">
+                    <h3>Omelet proteico 500G</h3>
+                    <p class="desc">Omelet recheado com legumes e queijo branco.</p>
+                    <span class="preco">R$ 22,00</span>
+                    <div class="obs-container"><i class="fas fa-pencil-alt"></i><input type="text" class="obs-input" placeholder="Alguma observação?"></div>
+                    <button class="btn-add">Adicionar ao Pedido</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CARRINHO -->
+    <div class="cart-toggle"><i class="fas fa-shopping-basket"></i></div>
+    <div class="carrinho-container" id="carrinho">
+        <div class="cart-header">
+            <h3>Meu Pedido</h3>
+            <button class="close-cart"><i class="fas fa-times"></i></button>
+        </div>
+        <div class="itens-lista"></div>
+        <div class="cart-footer">
+            <div class="total-box"><span>Total:</span><span class="total-valor">R$ 0,00</span></div>
+            <button class="btn-finalizar">Enviar Pedido</button>
+        </div>
+    </div>
+
+    <footer id="contato" class="footer-styled">
+        <div class="container footer-grid">
+            <div class="footer-col brand-col">
+                <img src="Imagens Logo/Logo PNG.png" alt="Logo" class="logo-footer">
+                <p>Levando o verdadeiro sabor de casa e praticidade para o seu dia a dia.</p>
+                <div class="social-icons">
+                    <a href="https://www.instagram.com/caseirinhasdacris"><i class="fab fa-instagram"></i></a>
+                    <a href="https://wa.me/5511988468854"><i class="fab fa-whatsapp"></i></a>
+                    <a href="https://www.tiktok.com/@caseirinhasdacris?_r=1&_t=ZS-95tGZOelfm8"><i class="fab fa-tiktok"></i></a>
+
+                </div>
+            </div>
+            
+            <div class="footer-col">
+                <h4>Links Rápidos</h4>
+                <ul>
+                    <li><a href="#home">Início</a></li>
+                    <li><a href="#sobre">Sobre a Cris</a></li>
+                    <li><a href="cardapio.html">Nosso Cardápio</a></li>
+                    <li><a href="#chef">Chef a Domicílio</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>Contato</h4>
+                <ul class="contact-info">
+                    <li><i class="fas fa-phone"></i> (11) 98846-8854</li>
+                    <li><i class="fas fa-envelope"></i>cris.caseirinhas@gmail.com</li>
+                    <li><i class="fas fa-map-marker-alt"></i> Santo André - SP</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; 2026 Caseirinhas da Cris. Todos os direitos reservados.</p>
+                <p class="dev-credit">Desenvolvido por <strong>SturaroAds</strong></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
